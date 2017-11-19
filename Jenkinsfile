@@ -7,6 +7,7 @@ node ('slave'){
      stash excludes: 'target/', includes: '**', name: 'source'
 }
 stage 'test'
+parallel 'integration': {
 node ('slave') {
           unstash 'source'
           withEnv(["PATH+MAVEN=${tool 'Maven'}/bin"]) {
