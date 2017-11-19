@@ -22,9 +22,9 @@ node ('slave') {
           }
      }
 }
-stage 'approve'
+// stage 'approve'
 timeout(time: 7, unit: 'DAYS') {
-     input message: 'Do you want to deploy?', submitter: 'usha'
+     input message: 'Do you want to deploy?', submitter: 'jayanthi.y'
 }
 stage name:'deploy', concurrency: 1
 node ('slave') {
