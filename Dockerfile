@@ -1,4 +1,4 @@
-FROM rns/oracle-java:8
+FROM java
 
 ENV MAVEN_VERSION 3.3.9
 
