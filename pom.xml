@@ -116,20 +116,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
-     <distributionManagement>
-    <snapshotRepository>
-        <id>Internal</id>
-        <name>Internal Snapshots</name>
-        <url>http://ec2-54-152-27-120.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-        <id>Internal</id>
-        <name>Internal Releases</name>
-        <url>http://ec2-54-152-27-120.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/releases/</url>
-    </repository>
-</distributionManagement>
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
